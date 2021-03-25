@@ -28,7 +28,7 @@ public class Rectangle extends Shape {
         return width;
     }
 
-    public Object getDiagonal() {
+    public double getDiagonal() {
         return Math.hypot(width,length);
     }
 
@@ -40,6 +40,12 @@ public class Rectangle extends Shape {
     @Override
     public double getPerimeter(){
         return (2*width+2*length);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format(", length %s ", length) +String.format( "and width %s", width);
+
     }
 
 
