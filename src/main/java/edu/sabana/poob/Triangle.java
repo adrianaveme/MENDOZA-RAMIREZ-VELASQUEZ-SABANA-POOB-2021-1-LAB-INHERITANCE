@@ -6,7 +6,7 @@ public class Triangle extends Shape {
     private double side3 = 1.0;
 
     public Triangle() {
-        super ();
+        super();
     }
 
     public Triangle(String color) {
@@ -26,5 +26,5 @@ public class Triangle extends Shape {
         this.side3 = side3;
     }
 
-    
+
 }
