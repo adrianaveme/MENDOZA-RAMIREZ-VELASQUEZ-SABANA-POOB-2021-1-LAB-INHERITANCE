@@ -26,5 +26,7 @@ public class Triangle extends Shape {
         this.side3 = side3;
     }
 
+
+
     
 }
