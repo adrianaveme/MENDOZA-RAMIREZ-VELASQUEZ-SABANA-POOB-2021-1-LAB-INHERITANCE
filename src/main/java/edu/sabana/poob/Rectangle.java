@@ -28,6 +28,18 @@ public class Rectangle extends Shape {
         return width;
     }
 
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     public Object getDiagonal() {
         return Math.hypot(width,length);
     }
