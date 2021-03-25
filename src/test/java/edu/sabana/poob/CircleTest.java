@@ -21,7 +21,7 @@ public class CircleTest {
         c3 = new Circle("red", 23.5);
         c4 = new Circle();
         c5 = new Circle(20);
-        c6 = new Circle(3);
+        c6 = new Circle("green",3);
     }
 
     @Test
@@ -55,6 +55,9 @@ public class CircleTest {
         assertEquals(29, (int) c2.getDiameter());
         assertEquals(47, (int) c3.getDiameter());
         assertEquals(2, (int) c4.getDiameter());
+        assertEquals(40, (int)c5.getDiameter());
+        assertEquals(6, (int)c6.getDiameter());
+
     }
 
     @Test
@@ -64,6 +67,9 @@ public class CircleTest {
         assertEquals("This is a Circle with color NONE and radius 14.5", c2.toString());
         assertEquals("This is a Circle with color red and radius 23.5", c3.toString());
         assertEquals("This is a Circle with color NONE and radius 1", c4.toString());
+        assertEquals("This is a Circle with color NONE and radius 20", c5.toString());
+        assertEquals("This is a Circle with color green and radius 3", c6.toString());
+
     }
 
 }

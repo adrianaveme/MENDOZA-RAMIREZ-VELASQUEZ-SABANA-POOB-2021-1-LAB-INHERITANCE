@@ -19,16 +19,31 @@ public class Circle extends Shape {
     }
 
     public double getDiameter() {
-        return 0;
+        return 2*radius;
     }
 
     @Override
     public double getArea(){
-        return Math.pow(this.radius,2)*PI;
+        return Math.pow(radius,2)*PI;
     }
 
     @Override
     public double getPerimeter() {
         return 2*radius*PI;
+    }
+
+    @Override
+    public String toString() {
+        String result;
+
+        if ((int)radius == radius){
+            int newRadius = (int)radius;
+            result = super.toString() + String.format(" and radius %s", newRadius);
+        }
+        else {
+            result = super.toString() + String.format(" and radius %s", radius);
+        }
+
+        return result;
     }
 }
