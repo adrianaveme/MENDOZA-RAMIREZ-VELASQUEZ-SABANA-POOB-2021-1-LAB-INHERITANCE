@@ -23,4 +23,8 @@ public class Rectangle extends Shape {
         this.width = width;
         this.lenght = lenght;
     }
+
+    public double getWidth() {
+        return width;
+    }
 }
