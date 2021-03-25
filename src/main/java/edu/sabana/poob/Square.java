@@ -9,6 +9,7 @@ public class Square extends Rectangle{
     public Square(String color) {
         super(color);
     }
+
     public Square(double side) {
         side = getWidth();
 
