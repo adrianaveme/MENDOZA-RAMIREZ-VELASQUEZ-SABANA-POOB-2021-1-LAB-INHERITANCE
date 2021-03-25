@@ -2,6 +2,7 @@ package edu.sabana.poob;
 
 public class Circle extends Shape {
 
+    public static final double PI=3.142;
     private double radius;
 
     public Circle() {
@@ -21,4 +22,13 @@ public class Circle extends Shape {
         return 0;
     }
 
+    @Override
+    public double getArea(){
+        return Math.pow(this.radius,2)*PI;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2*radius*PI;
+    }
 }
