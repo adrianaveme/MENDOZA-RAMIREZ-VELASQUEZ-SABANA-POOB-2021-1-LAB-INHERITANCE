@@ -28,7 +28,6 @@ public class Rectangle extends Shape {
         return width;
     }
 
-<<<<<<< HEAD
     public void setWidth(double width) {
         this.width = width;
     }
@@ -41,10 +40,7 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-    public Object getDiagonal() {
-=======
     public double getDiagonal() {
->>>>>>> 8973302fb1b8dcd67dda94ae52ad99e5dec07cb9
         return Math.hypot(width,length);
     }
 
