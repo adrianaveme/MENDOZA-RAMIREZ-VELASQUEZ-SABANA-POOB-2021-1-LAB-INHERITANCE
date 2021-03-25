@@ -25,6 +25,4 @@ public class Triangle extends Shape {
         this.side2 = side2;
         this.side3 = side3;
     }
-
-
 }
