@@ -43,10 +43,10 @@ public class RectangleTest {
     @Test
     public void shouldCalculateDiagonal() {
 
-        assertEquals(1, r1.getDiagonal());
-        assertEquals(1, r2.getDiagonal());
-        assertEquals(3.6 , r3.getDiagonal());
-        assertEquals(7.8, r4.getDiagonal());
+        assertEquals(1, Math.round((int) r1.getDiagonal()));
+        assertEquals(1, Math.round(r2.getDiagonal()));
+        assertEquals(4, Math.round(r3.getDiagonal()));
+        assertEquals(8, Math.round(r4.getDiagonal()));
 
     }
 
@@ -54,9 +54,9 @@ public class RectangleTest {
     public void shouldPrintRectangle() {
 
         assertEquals("This is a Rectangle with color NONE, length 1.0 and width 1.0", r1.toString());
-        assertEquals("This is a Rectangle with color NONE, length 1.0 and width 1.0", r2.toString());
-        assertEquals("This is a Rectangle with color NONE, length 2.0 and width 3.0", r3.toString());
-        assertEquals("This is a Rectangle with color NONE, length 5.0 and width 6.0", r4.toString());
+        assertEquals("This is a Rectangle with color blue, length 1.0 and width 1.0", r2.toString());
+        assertEquals("This is a Rectangle with color NONE, length 3.0 and width 2.0", r3.toString());
+        assertEquals("This is a Rectangle with color red, length 6.0 and width 5.0", r4.toString());
 
 
     }
