@@ -1,4 +1,9 @@
-public class EmployeeCommission extends Employee{
+package entities;
+
+import entities.Department;
+import entities.Employee;
+
+public class EmployeeCommission extends Employee {
 
 
     private double soldProducts;

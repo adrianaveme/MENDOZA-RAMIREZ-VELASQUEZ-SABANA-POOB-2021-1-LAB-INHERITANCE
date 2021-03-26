@@ -1,6 +1,6 @@
+package entities;
 
-
-public class EmployeeSalary extends Employee{
+public class EmployeeSalary extends Employee {
 
     private static final double HEALTH_DISCOUNT = 0.04;
     private static final double PENSION_DISCOUNT = 0.04;

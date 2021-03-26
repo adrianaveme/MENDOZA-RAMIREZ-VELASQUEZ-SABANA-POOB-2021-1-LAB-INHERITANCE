@@ -1,4 +1,7 @@
-import java.util.ArrayList;
+package entities;
+
+import entities.*;
+
 import java.util.List;
 import java.util.UUID;
 

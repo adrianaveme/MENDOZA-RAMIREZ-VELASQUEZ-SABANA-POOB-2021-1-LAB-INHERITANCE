@@ -1,4 +1,9 @@
-public class EmployeeHours extends Employee{
+package entities;
+
+import entities.Department;
+import entities.Employee;
+
+public class EmployeeHours extends Employee {
 
     private double hours;
     private static final double HOURS_VAL = 0;

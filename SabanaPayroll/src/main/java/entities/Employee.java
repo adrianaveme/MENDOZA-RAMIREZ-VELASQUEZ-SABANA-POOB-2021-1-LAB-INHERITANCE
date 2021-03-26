@@ -1,3 +1,7 @@
+package entities;
+
+import entities.Department;
+
 import java.util.UUID;
 
 public class Employee {
