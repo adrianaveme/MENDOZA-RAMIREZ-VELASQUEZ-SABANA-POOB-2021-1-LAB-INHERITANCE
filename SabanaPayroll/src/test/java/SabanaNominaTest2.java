@@ -69,12 +69,12 @@ public class SabanaNominaTest2 {
 
     @Test
     public void shouldPrintPayroll(){
-        String toStringE1 = "Bobby Brown, department arts, salary 0";
-        String toStringE2 = "Philbert Horseman, department arts, salary 0";
-        String toStringEc1 = "Stan Ursic, department engineering, salary 400.0 payment by commission.";
-        String toStringEs1 = "Harry Porter, department engineering, salary 460.0 payment by salary.";
-        String toStringEh1 = "Danielle Vergara, department engineering, salary 30.0 payment by hours.";
-        assertEquals(toStringE1+toStringE2+toStringEc1+toStringEs1+toStringEh1, e1.toString();
+        String toStringE1 = "Bobby Brown, department arts, salary $0.0,";
+        String toStringE2 = "Philbert Horseman, department arts, salary $0.0,";
+        String toStringEc1 = "Stan Ursic, department engineering, salary $400.0, payment by commission.";
+        String toStringEs1 = "Harry Porter, department engineering, salary $460.0, payment by salary.";
+        String toStringEh1 = "Danielle Vergara, department engineering, salary $30.0, payment by hours.";
+        assertEquals(toStringE1+toStringE2+toStringEc1+toStringEs1+toStringEh1, e1.toString()+e2.toString()+ec1.toString()+es1.toString()+eh1.toString());
     }
 
 
