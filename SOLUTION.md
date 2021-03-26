@@ -1,4 +1,12 @@
 # SOLUTION
+
+**Daniela Ramirez**
+
+**Felipe Mendoza**
+
+**Adriana Velásquez**
+
+
 ## Parte 1
 
 Captura de pantalla de tests aprobados:
