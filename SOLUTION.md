@@ -43,3 +43,7 @@ Diagramas de secuencia:
 
 * calculateUniversitySalaries
 ![image](https://github.com/adrianaveme/MENDOZA-RAMIREZ-VELASQUEZ-SABANA-POOB-2021-1-LAB-INHERITANCE/blob/master/Screenshots/calculateUniversitySalaries%20diagrama%20de%20secuencia.png)
+
+* Tests Passed
+
+![image](https://user-images.githubusercontent.com/79488147/112578850-c9e06e80-8dc3-11eb-8b2b-e85994e2755c.png)
