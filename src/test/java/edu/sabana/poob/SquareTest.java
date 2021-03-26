@@ -49,9 +49,9 @@ public class SquareTest {
     @Test
     public void shouldPrintCircle() {
 
-        assertEquals("This is a Square with color NONE and side 10", s1.toString());
-        assertEquals("This is a Square with color blue and side 1", s2.toString());
-        assertEquals("This is a Square with color NONE and radius 1", s3.toString());
-        assertEquals("This is a Square with color purple and radius 25", s4.toString());
+        assertEquals("This is a Square with color NONE, length 10.0 and width 10.0", s1.toString());
+        assertEquals("This is a Square with color blue, length 1.0 and width 1.0", s2.toString());
+        assertEquals("This is a Square with color NONE, length 1.0 and width 1.0", s3.toString());
+        assertEquals("This is a Square with color purple, length 25.0 and width 25.0", s4.toString());
     }
 }
