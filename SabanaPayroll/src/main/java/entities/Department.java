@@ -1,7 +1,6 @@
 package entities;
 
 import java.util.UUID;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Department {
@@ -10,9 +9,10 @@ public class Department {
     private UUID id;
     private String name;
 
-    public Department(String name){
+    public Department(String name, List<Employee> employees){
         this.id = UUID.randomUUID();
         this.name = name;
+        this.employees = employees;
     }
 
     public String getName() {

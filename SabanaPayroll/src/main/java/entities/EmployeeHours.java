@@ -6,7 +6,7 @@ import entities.Employee;
 public class EmployeeHours extends Employee {
 
     private double hours;
-    private static final double HOURS_VAL = 0;
+    private static final double HOURS_VAL = 10;
 
     public EmployeeHours(String name, String lastName, Department department, double hours) {
         super(name, lastName, department);

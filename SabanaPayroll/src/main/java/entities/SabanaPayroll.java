@@ -9,6 +9,10 @@ public class SabanaPayroll {
 
     public List<Department> departments;
 
+    public SabanaPayroll(List<Department> departments) {
+        this.departments = departments;
+    }
+
     public double calculateUniversitySalaries() {
         double cont = 0;
         for (Department d : departments) {
