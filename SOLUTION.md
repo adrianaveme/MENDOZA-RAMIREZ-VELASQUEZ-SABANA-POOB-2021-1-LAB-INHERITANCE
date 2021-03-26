@@ -3,7 +3,19 @@
 
 Captura de pantalla de tests aprobados:
 
+* Circle Tests
+
 ![image](https://user-images.githubusercontent.com/79488147/112408898-911e9780-8ce6-11eb-932c-aa0b781173f3.png)
+
+## Parte 2
+
+* Rectangle Tests
+
+
+* Trianlge Tests
+
+
+* Square Tests
 
 ## Parte 3
 Diseño en UML de herencia propuesta para triangle.
