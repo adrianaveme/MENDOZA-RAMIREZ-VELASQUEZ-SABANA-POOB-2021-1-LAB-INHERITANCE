@@ -13,7 +13,7 @@ Captura de pantalla de tests aprobados:
 
 ![image](https://user-images.githubusercontent.com/79488147/112563978-5da44180-8da8-11eb-97aa-567cf6978e9f.png)
 
-* Trianlge Tests
+* Triangle Tests
 
 ![image](https://user-images.githubusercontent.com/79488147/112564123-ab20ae80-8da8-11eb-87d9-70a11d5c4514.png)
 
