@@ -11,12 +11,10 @@ public class Square extends Rectangle{
     }
 
     public Square(double side) {
-        side = getWidth();
-
+        super(side,side);
     }
 
     public Square(String color, double side) {
-        super(color);
-        side = getWidth();
+        super(color, side, side);
     }
 }
