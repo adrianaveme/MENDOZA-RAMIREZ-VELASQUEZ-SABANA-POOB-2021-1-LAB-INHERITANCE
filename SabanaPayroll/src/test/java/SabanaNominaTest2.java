@@ -26,32 +26,31 @@ public class SabanaNominaTest2 {
         List<Employee> employeesArt = new ArrayList<>();
         List<Employee> employeesEngineering = new ArrayList<>();
 
-        Department d1 = new Department("arts", employeesArt);
-        Department d2 = new Department("engineering", employeesEngineering);
+        d1 = new Department("arts", employeesArt);
+        d2 = new Department("engineering", employeesEngineering);
 
         departments.add(d1);
         departments.add(d2);
 
-        Employee e1 = new Employee("Bobby", "Brown", d1);
-        Employee e2 = new Employee("Philbert", "Horseman", d1);
-        Employee e3 = new Employee("Donald", "Lee", d1);
+        e1 = new Employee("Bobby", "Brown", d1);
+        e2 = new Employee("Philbert", "Horseman", d1);
 
-        EmployeeCommission ec1 = new EmployeeCommission("Stan", "Ursic", d2, 200.0);
-        EmployeeSalary es1 = new EmployeeSalary("Harry", "Porter", d2, 500.0);
-        EmployeeHours eh1 = new EmployeeHours("Danielle", "Vergara", d2, 3.0);
+        ec1 = new EmployeeCommission("Stan", "Ursic", d2, 200.0);
+        es1 = new EmployeeSalary("Harry", "Porter", d2, 500.0);
+        eh1 = new EmployeeHours("Danielle", "Vergara", d2, 3.0);
 
         employeesArt.add(e1);
         employeesArt.add(e2);
-        employeesArt.add(e3);
         employeesEngineering.add(ec1);
         employeesEngineering.add(es1);
         employeesEngineering.add(eh1);
 
-        SabanaPayroll sp = new SabanaPayroll(departments);
+        sp = new SabanaPayroll(departments);
     }
 
     @Test
     public void shouldCalculateEmployeeSalary(){
+        assertEquals(0, sp.calculateEmployeeSalary(e1.getId()));
         assertEquals(400.0, sp.calculateEmployeeSalary(ec1.getId()));
         assertEquals(460.0, sp.calculateEmployeeSalary(es1.getId()));
         assertEquals(30.0, sp.calculateEmployeeSalary(eh1.getId()));
@@ -60,17 +59,22 @@ public class SabanaNominaTest2 {
     @Test
     public void shouldCalculateDepartmentSalaries(){
         assertEquals(0, sp.calculateDepartmentSalaries(d1.getId()));
-
+        assertEquals(890.0, sp.calculateDepartmentSalaries(d2.getId()));
     }
 
     @Test
     public void shouldCalculateUniversitySalaries(){
-
+        assertEquals(890.0, sp.calculateUniversitySalaries());
     }
 
     @Test
     public void shouldPrintPayroll(){
-
+        String toStringE1 = "Bobby Brown, department arts, salary 0";
+        String toStringE2 = "Philbert Horseman, department arts, salary 0";
+        String toStringEc1 = "Stan Ursic, department engineering, salary 400.0 payment by commission.";
+        String toStringEs1 = "Harry Porter, department engineering, salary 460.0 payment by salary.";
+        String toStringEh1 = "Danielle Vergara, department engineering, salary 30.0 payment by hours.";
+        assertEquals(toStringE1+toStringE2+toStringEc1+toStringEs1+toStringEh1, e1.toString();
     }
 
 
