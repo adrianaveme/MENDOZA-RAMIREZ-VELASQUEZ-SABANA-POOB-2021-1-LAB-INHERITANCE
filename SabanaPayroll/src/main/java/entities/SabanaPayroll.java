@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class SabanaPayroll {
 
-    private List<Department> departments;
+    public List<Department> departments;
 
     public double calculateUniversitySalaries() {
         double cont = 0;
